@@ -359,12 +359,15 @@ body {
 }
 
 
-  .footer {
-    padding: 60px 25px; /* reduce side padding */
-  }
+  @media (max-width: 768px) {
+    .footer {
+        padding: 60px 25px; /* reduce side padding on mobile */
+    }
 
-  .footer-container {
-    grid-template-columns: 1fr; /* stack columns */
-    gap: 40px;
-  }
+    .footer-container {
+        grid-template-columns: 1fr; /* stack columns on mobile only */
+        gap: 40px;
+    }
+}
+
 
