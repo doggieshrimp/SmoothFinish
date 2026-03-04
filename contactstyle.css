@@ -163,7 +163,6 @@ body {
       flex-shrink: 0;
       width: 200px;
       height: 440px;
-      object-fit: cover;
       border-radius: 4px;
       background: #b5d1d4;
     }
