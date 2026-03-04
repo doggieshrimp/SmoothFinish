@@ -1,0 +1,343 @@
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+      /* reset & base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+            background: #d9e2e6;
+            min-height: 100vh; /* provides scroll to demonstrate behavior */
+        }
+
+        /* ----- AUTO-HIDE STICKY NAVBAR (JS enhanced) ----- */
+        .sticky-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 40px;
+            background-color: rgba(127, 166, 184, 0.8); /* adjust 0.5 to your desired opacity */
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            width: 100%;
+            transition: transform 0.3s ease;
+        }
+
+        /* hidden state – slide up out of view */
+        .sticky-nav.nav-hidden {
+            transform: translateY(-100%);
+        }
+
+        .logo img {
+            height: 70px;
+            display: block;
+        }
+
+        .nav-btn {
+            background-color: #1f3c4d;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-size: 16px !important;
+            font-weight: 500 !important;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif !important;
+            line-height: normal;
+            transition: background 0.2s;
+        }
+        .nav-btn:hover {
+            background-color: #14303e;
+        }
+
+
+
+        /* ===== FOOTER ===== */
+
+.footer {
+    background-color: #3f6c7f;
+    padding: 100px 80px;
+    color: #eaf4f8;
+}
+
+.footer-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 100px;
+}
+
+.footer-col h3 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.footer-col a {
+    display: block;
+    color: #eaf4f8;
+    text-decoration: none;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.footer-col a:hover {
+    text-decoration: underline;
+}
+
+.footer-col p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.footer-logo {
+    width: 80px;
+    margin-bottom: 40px;
+
+
+}
+/* content */
+    /* ── reset / base ── */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      background: #f0f0f0;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+      width: 100%;
+      overflow-x: hidden; /* prevent horizontal scroll */
+    }
+
+    /* each section now spans full viewport width */
+    .contact-section,
+    .facebook-section {
+      width: 100%;
+    }
+
+    /* inner content containers - max width for readability, centered */
+    .contact-body,
+    .facebook-body {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 40px; /* keep padding consistent */
+      min-height: 400px;
+    }
+
+    /* --- CONTACT SECTION --- */
+    .contact-section {
+      background-color: #1f4a5a;
+      color: #ffffff;
+      padding: 48px 0; /* padding top/bottom only, sides handled by inner container */
+    }
+    
+    .contact-section h1 {
+      font-size: 3.8rem;
+      font-weight: 700;
+      margin-bottom: 32px;
+      letter-spacing: 0.5px;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0 40px;
+    }
+    
+    .contact-body {
+      display: flex;
+      gap: 32px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+    
+    .contact-photo {
+      flex-shrink: 0;
+      width: 200px;
+      height: 240px;
+      object-fit: cover;
+      border-radius: 4px;
+      background: #b5d1d4;
+    }
+    
+    .contact-text {
+      flex: 1;
+      min-width: 260px;
+    }
+    
+    .contact-text p {
+      font-size: 0.92rem;
+      line-height: 1.7;
+      color: #e0eff0;
+      margin-bottom: 14px;
+    }
+    
+    .contact-text p:last-of-type {
+      margin-bottom: 0;
+    }
+    
+    .contact-phone {
+      display: block;
+      margin-top: 8px;
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: #ffffff;
+      letter-spacing: 1px;
+      text-decoration: none;
+    }
+    
+    .contact-phone:hover {
+      text-decoration: underline;
+      opacity: 0.9;
+    }
+
+/* ===== FACEBOOK SECTION ===== */
+.facebook-section {
+  background-color: #7fa6b8;
+  color: #ffffff;
+  padding: 60px 40px;
+  width: 100%;
+}
+
+.facebook-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.facebook-section h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+}
+
+/* MAIN LAYOUT */
+.facebook-body {
+  display: flex;
+  align-items: center;          /* vertical centering */
+  justify-content: center;      /* keeps both sides centred */
+  gap: 50px;
+  flex-wrap: nowrap;            /* prevents weird wrapping */
+}
+
+/* ICON */
+.fb-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;               /* prevents shrinking */
+}
+
+.fb-icon {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(145deg, #3b5f8c, #1e3e66);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.fb-icon svg {
+  width: 110px;
+  height: 110px;
+  fill: #ffffff;
+}
+
+/* TEXT */
+.fb-content {
+  flex: 1;                      /* fills remaining space */
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+.fb-content p {
+  margin-bottom: 1.5rem;
+  max-width: 750px;
+}
+
+.btn-facebook {
+  display: inline-block;
+  background-color: #2c4c6b;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 14px 36px;
+  border-radius: 40px;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.1s;
+  border: none;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .facebook-body {
+    flex-direction: column;     /* stack vertically */
+    text-align: center;
+    gap: 30px;
+  }
+
+  .fb-content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .fb-icon {
+    width: 180px;
+    height: 180px;
+  }
+
+  .fb-icon svg {
+    width: 90px;
+    height: 90px;
+  }
+
+  .facebook-section h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .facebook-section {
+    padding: 40px 24px;
+  }
+
+  .facebook-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+  }
+
+  .fb-icon {
+    width: 160px;
+    height: 160px;
+  }
+
+  .fb-icon svg {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+
+  .footer {
+    padding: 60px 25px; /* reduce side padding */
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr; /* stack columns */
+    gap: 40px;
+  }
+
