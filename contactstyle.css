@@ -159,12 +159,12 @@ body {
       flex-wrap: wrap;
     }
     
-    .contact-photo {
+   .contact-photo {
       flex-shrink: 0;
-      width: 440px;
-      height: 440px;
-      border-radius: 4px;
-      background: #b5d1d4;
+      width: 100%;
+      max-width: 440px;   /* desktop size limit */
+      height: auto;       /* keeps proportions */
+      border-radius: 40px;
     }
     
     .contact-text {
